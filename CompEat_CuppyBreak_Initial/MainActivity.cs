@@ -1,4 +1,4 @@
-﻿using Android.App;
+using Android.App;
 using Android.Content;
 using Android.Content.PM;
 using Android.Graphics;
@@ -15,6 +15,7 @@ using Clans.Fab;
 using CompEat_CuppyBreak_Initial.Resources;
 using Google.Android.Material.FloatingActionButton;
 using Google.Android.Material.Internal;
+using Google.Android.Material.Snackbar;
 using Java.Security;
 using Java.Util.Functions;
 using System;
@@ -160,7 +161,6 @@ namespace CompEat_CuppyBreak_Initial
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
 
-            
 
             TextView itemcounts = (TextView)FindViewById(Resource.Id.changetotal);
             
@@ -394,7 +394,8 @@ namespace CompEat_CuppyBreak_Initial
 
                 if (gltotalconverted == 0)
                 {
-                    Toast.MakeText(this, "Please add an Item", ToastLength.Short).Show();
+                    Snackbar snackbar = (Snackbar)Snackbar.Make(computebtn, "Please add an Item", Snackbar.LengthIndefinite).SetDuration(1000);
+                    snackbar.Show();
                 } else {
                     Intent i = new Intent(this, typeof(calculator));
 
@@ -460,7 +461,7 @@ namespace CompEat_CuppyBreak_Initial
                 subvalue(price59, inivalue, itemcount1);
                 dectotal(itemcount1);
 
-
+                removesub(subbutton1, itemcount1);
             };
 
             subbutton2.Click += (s, e) =>
@@ -469,6 +470,7 @@ namespace CompEat_CuppyBreak_Initial
                 subvalue(price59, inivalue, itemcount2);
                 dectotal(itemcount2);
 
+                removesub(subbutton2, itemcount2);
             };
 
             subbutton3.Click += (s, e) =>
@@ -476,6 +478,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price49, inivalue, itemcount3);
                 dectotal(itemcount3);
+
+                removesub(subbutton3, itemcount3);
             };
 
             subbutton4.Click += (s, e) =>
@@ -483,6 +487,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price59, inivalue, itemcount4);
                 dectotal(itemcount4);
+
+                removesub(subbutton4, itemcount4);
             };
 
             subbutton5.Click += (s, e) =>
@@ -490,6 +496,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price69, inivalue, itemcount5);
                 dectotal(itemcount5);
+
+                removesub(subbutton5, itemcount5);
             };
 
             //Sweet Beverage 16 oz
@@ -498,6 +506,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price49, inivalue, itemcount6);
                 dectotal(itemcount6);
+
+                removesub(subbutton6, itemcount6);
             };
 
             subbutton7.Click += (s, e) =>
@@ -505,6 +515,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price59, inivalue, itemcount7);
                 dectotal(itemcount7);
+
+                removesub(subbutton7, itemcount7);
             };
 
             subbutton8.Click += (s, e) =>
@@ -512,6 +524,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price49, inivalue, itemcount8);
                 dectotal(itemcount8);
+
+                removesub(subbutton8, itemcount8);
             };
 
             //Coffee 20oz 
@@ -520,6 +534,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price79, inivalue, itemcount9);
                 dectotal(itemcount9);
+
+                removesub(subbutton9, itemcount9);
             };
 
             subbutton10.Click += (s, e) =>
@@ -527,6 +543,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price79, inivalue, itemcount10);
                 dectotal(itemcount10);
+
+                removesub(subbutton10, itemcount10);
             };
 
             subbutton11.Click += (s, e) =>
@@ -534,6 +552,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price79, inivalue, itemcount11);
                 dectotal(itemcount11);
+
+                removesub(subbutton11, itemcount11);
             };
 
             subbutton12.Click += (s, e) =>
@@ -541,6 +561,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price79, inivalue, itemcount12);
                 dectotal(itemcount12);
+
+                removesub(subbutton12, itemcount12);
             };
 
             subbutton13.Click += (s, e) =>
@@ -548,6 +570,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price89, inivalue, itemcount13);
                 dectotal(itemcount13);
+
+                removesub(subbutton13, itemcount13);
             };
 
             //Sweet Beverage 20oz
@@ -556,6 +580,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price69, inivalue, itemcount14);
                 dectotal(itemcount14);
+
+                removesub(subbutton14, itemcount14);
             };
 
             subbutton15.Click += (s, e) =>
@@ -563,6 +589,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price79, inivalue, itemcount15);
                 dectotal(itemcount15);
+
+                removesub(subbutton15, itemcount15);
             };
 
             subbutton16.Click += (s, e) =>
@@ -570,6 +598,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price69, inivalue, itemcount16);
                 dectotal(itemcount16);
+
+                removesub(subbutton16, itemcount16);
             };
 
 
@@ -579,6 +609,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price10, inivalue, itemcount17);
                 dectotal(itemcount17);
+
+                removesub(subbutton17, itemcount17);
             };
 
             subbutton18.Click += (s, e) =>
@@ -586,6 +618,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price10, inivalue, itemcount18);
                 dectotal(itemcount18);
+
+                removesub(subbutton18, itemcount18);
             };
 
             subbutton19.Click += (s, e) =>
@@ -593,6 +627,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price10, inivalue, itemcount19);
                 dectotal(itemcount19);
+
+                removesub(subbutton19, itemcount19);
             };
 
 
@@ -602,6 +638,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price15, inivalue, itemcount20);
                 dectotal(itemcount20);
+
+                removesub(subbutton20, itemcount20);
             };
 
             subbutton21.Click += (s, e) =>
@@ -609,6 +647,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price10, inivalue, itemcount21);
                 dectotal(itemcount21);
+
+                removesub(subbutton21, itemcount21);
             };
 
             subbutton22.Click += (s, e) =>
@@ -616,6 +656,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price15, inivalue, itemcount22);
                 dectotal(itemcount22);
+
+                removesub(subbutton22, itemcount22);
             };
 
             subbutton23.Click += (s, e) =>
@@ -623,6 +665,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price20, inivalue, itemcount23);
                 dectotal(itemcount23);
+
+                removesub(subbutton23, itemcount23);
             };
 
             subbutton24.Click += (s, e) =>
@@ -630,6 +674,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price20, inivalue, itemcount24);
                 dectotal(itemcount24);
+
+                removesub(subbutton24, itemcount24);
             };
 
             subbutton25.Click += (s, e) =>
@@ -637,6 +683,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price25, inivalue, itemcount25);
                 dectotal(itemcount25);
+
+                removesub(subbutton25, itemcount25);
             };
 
             //Other Products
@@ -645,6 +693,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price10, inivalue, itemcount26);
                 dectotal(itemcount26);
+
+                removesub(subbutton26, itemcount26);
             };
 
             subbutton27.Click += (s, e) =>
@@ -652,6 +702,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price15, inivalue, itemcount27);
                 dectotal(itemcount27);
+
+                removesub(subbutton27, itemcount27);
             };
 
             subbutton28.Click += (s, e) =>
@@ -659,6 +711,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price20, inivalue, itemcount28);
                 dectotal(itemcount28);
+
+                removesub(subbutton28, itemcount28);
             };
 
             subbutton29.Click += (s, e) =>
@@ -666,6 +720,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price25, inivalue, itemcount29);
                 dectotal(itemcount29);
+
+                removesub(subbutton29, itemcount29);
             };
 
             subbutton30.Click += (s, e) =>
@@ -673,6 +729,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price30, inivalue, itemcount30);
                 dectotal(itemcount30);
+
+                removesub(subbutton30, itemcount30);
             };
 
             subbutton31.Click += (s, e) =>
@@ -680,6 +738,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price18, inivalue, itemcount31);
                 dectotal(itemcount31);
+
+                removesub(subbutton31, itemcount31);
             };
 
             subbutton32.Click += (s, e) =>
@@ -687,6 +747,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price28, inivalue, itemcount32);
                 dectotal(itemcount32);
+
+                removesub(subbutton32, itemcount32);
             };
 
             subbutton33.Click += (s, e) =>
@@ -694,6 +756,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price19, inivalue, itemcount33);
                 dectotal(itemcount33);
+
+                removesub(subbutton33, itemcount33);
             };
 
             subbutton34.Click += (s, e) =>
@@ -701,6 +765,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price20, inivalue, itemcount34);
                 dectotal(itemcount34);
+
+                removesub(subbutton34, itemcount34);
             };
 
             subbutton35.Click += (s, e) =>
@@ -708,6 +774,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price19, inivalue, itemcount35);
                 dectotal(itemcount35);
+
+                removesub(subbutton35, itemcount35);
             };
 
             subbutton36.Click += (s, e) =>
@@ -715,6 +783,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price17, inivalue, itemcount36);
                 dectotal(itemcount36);
+
+                removesub(subbutton36, itemcount36);
             };
 
             subbutton37.Click += (s, e) =>
@@ -722,6 +792,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price45, inivalue, itemcount37);
                 dectotal(itemcount37);
+
+                removesub(subbutton37, itemcount37);
             };
 
             subbutton38.Click += (s, e) =>
@@ -729,6 +801,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 subvalue(price15, inivalue, itemcount38);
                 dectotal(itemcount38);
+
+                removesub(subbutton38, itemcount38);
             };
 
             //CLICK LISTENERS FOR CARDS
@@ -740,7 +814,8 @@ namespace CompEat_CuppyBreak_Initial
                 addvalue(price59, inivalue);
                 inctotal(itemcount1);
 
-
+                displaysub(subbutton1, itemcount1);
+                
             };
 
             card2.Click += (s, e) =>
@@ -749,6 +824,7 @@ namespace CompEat_CuppyBreak_Initial
                 addvalue(price59, inivalue);
                 inctotal(itemcount2);
 
+                displaysub(subbutton2, itemcount2);
             };
 
             card3.Click += (s, e) =>
@@ -756,6 +832,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price49, inivalue);
                 inctotal(itemcount3);
+
+                displaysub(subbutton3, itemcount3);
             };
 
             card4.Click += (s, e) =>
@@ -763,6 +841,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price59, inivalue);
                 inctotal(itemcount4);
+
+                displaysub(subbutton4, itemcount4);
             };
 
             card5.Click += (s, e) =>
@@ -770,6 +850,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price69, inivalue);
                 inctotal(itemcount5);
+
+                displaysub(subbutton5, itemcount5);
             };
 
             //Sweet Beverage 16 oz
@@ -778,6 +860,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price49, inivalue);
                 inctotal(itemcount6);
+
+                displaysub(subbutton6, itemcount6);
             };
 
             card7.Click += (s, e) =>
@@ -785,6 +869,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price59, inivalue);
                 inctotal(itemcount7);
+
+                displaysub(subbutton7, itemcount7);
             };
 
             card8.Click += (s, e) =>
@@ -792,6 +878,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price49, inivalue);
                 inctotal(itemcount8);
+
+                displaysub(subbutton8, itemcount8);
             };
 
             //Coffee 20oz 
@@ -800,6 +888,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price79, inivalue);
                 inctotal(itemcount9);
+
+                displaysub(subbutton9, itemcount9);
             };
 
             card10.Click += (s, e) =>
@@ -807,6 +897,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price79, inivalue);
                 inctotal(itemcount10);
+
+                displaysub(subbutton10, itemcount10);
             };
 
             card11.Click += (s, e) =>
@@ -814,6 +906,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price79, inivalue);
                 inctotal(itemcount11);
+
+                displaysub(subbutton11, itemcount11);
             };
 
             card12.Click += (s, e) =>
@@ -821,6 +915,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price79, inivalue);
                 inctotal(itemcount12);
+
+                displaysub(subbutton12, itemcount12);
             };
 
             card13.Click += (s, e) =>
@@ -828,6 +924,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price89, inivalue);
                 inctotal(itemcount13);
+
+                displaysub(subbutton13, itemcount13);
             };
 
 
@@ -837,6 +935,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price69, inivalue);
                 inctotal(itemcount14);
+
+                displaysub(subbutton14, itemcount14);
             };
 
             card15.Click += (s, e) =>
@@ -844,6 +944,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price79, inivalue);
                 inctotal(itemcount15);
+
+                displaysub(subbutton15, itemcount15);
             };
 
             card16.Click += (s, e) =>
@@ -851,6 +953,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price69, inivalue);
                 inctotal(itemcount16);
+
+                displaysub(subbutton16, itemcount16);
             };
 
 
@@ -860,6 +964,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price10, inivalue);
                 inctotal(itemcount17);
+
+                displaysub(subbutton17, itemcount17);
             };
 
             card18.Click += (s, e) =>
@@ -867,6 +973,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price10, inivalue);
                 inctotal(itemcount18);
+
+                displaysub(subbutton18, itemcount18);
             };
 
             card19.Click += (s, e) =>
@@ -874,6 +982,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price10, inivalue);
                 inctotal(itemcount19);
+
+                displaysub(subbutton19, itemcount19);
             };
 
 
@@ -883,6 +993,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price15, inivalue);
                 inctotal(itemcount20);
+
+                displaysub(subbutton20, itemcount20);
             };
 
             card21.Click += (s, e) =>
@@ -890,6 +1002,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price10, inivalue);
                 inctotal(itemcount21);
+
+                displaysub(subbutton21, itemcount21);
             };
 
             card22.Click += (s, e) =>
@@ -897,6 +1011,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price15, inivalue);
                 inctotal(itemcount22);
+
+                displaysub(subbutton22, itemcount22);
             };
 
             card23.Click += (s, e) =>
@@ -904,6 +1020,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price20, inivalue);
                 inctotal(itemcount23);
+
+                displaysub(subbutton23, itemcount23);
             };
 
             card24.Click += (s, e) =>
@@ -911,6 +1029,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price20, inivalue);
                 inctotal(itemcount24);
+
+                displaysub(subbutton24, itemcount24);
             };
 
             card25.Click += (s, e) =>
@@ -918,6 +1038,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price25, inivalue);
                 inctotal(itemcount25);
+
+                displaysub(subbutton25, itemcount25);
             };
 
             //Other Products
@@ -926,6 +1048,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price10, inivalue);
                 inctotal(itemcount26);
+
+                displaysub(subbutton26, itemcount26);
             };
 
             card27.Click += (s, e) =>
@@ -933,6 +1057,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price15, inivalue);
                 inctotal(itemcount27);
+
+                displaysub(subbutton27, itemcount27);
             };
 
             card28.Click += (s, e) =>
@@ -940,6 +1066,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price20, inivalue);
                 inctotal(itemcount28);
+
+                displaysub(subbutton28, itemcount28);
             };
 
             card29.Click += (s, e) =>
@@ -947,6 +1075,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price25, inivalue);
                 inctotal(itemcount29);
+
+                displaysub(subbutton29, itemcount29);
             };
 
             card30.Click += (s, e) =>
@@ -954,6 +1084,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price30, inivalue);
                 inctotal(itemcount30);
+
+                displaysub(subbutton30, itemcount30);
             };
 
             card31.Click += (s, e) =>
@@ -961,6 +1093,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price18, inivalue);
                 inctotal(itemcount31);
+
+                displaysub(subbutton31, itemcount31);
             };
 
             card32.Click += (s, e) =>
@@ -968,6 +1102,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price28, inivalue);
                 inctotal(itemcount32);
+
+                displaysub(subbutton32, itemcount32);
             };
 
             card33.Click += (s, e) =>
@@ -975,6 +1111,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price19, inivalue);
                 inctotal(itemcount33);
+
+                displaysub(subbutton33, itemcount33);
             };
 
             card34.Click += (s, e) =>
@@ -982,6 +1120,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price20, inivalue);
                 inctotal(itemcount34);
+
+                displaysub(subbutton34, itemcount34);
             };
 
             card35.Click += (s, e) =>
@@ -989,6 +1129,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price19, inivalue);
                 inctotal(itemcount35);
+
+                displaysub(subbutton35, itemcount35);
             };
 
             card36.Click += (s, e) =>
@@ -996,6 +1138,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price17, inivalue);
                 inctotal(itemcount36);
+
+                displaysub(subbutton36, itemcount36);
             };
 
             card37.Click += (s, e) =>
@@ -1003,6 +1147,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price45, inivalue);
                 inctotal(itemcount37);
+
+                displaysub(subbutton37, itemcount37);
             };
 
             card38.Click += (s, e) =>
@@ -1010,6 +1156,8 @@ namespace CompEat_CuppyBreak_Initial
                 var inivalue = total.Text.ToString();
                 addvalue(price15, inivalue);
                 inctotal(itemcount38);
+
+                displaysub(subbutton38, itemcount38);
             };
 
             carticon.Click += (s, e) =>
@@ -1109,7 +1257,8 @@ namespace CompEat_CuppyBreak_Initial
 
                 if (itemcount == 1)
                 {
-                    Toast.MakeText(this, "Item Added!", ToastLength.Short).Show();
+                    Snackbar snackbar = (Snackbar)Snackbar.Make(computebtn, "Item Added!", Snackbar.LengthIndefinite).SetDuration(1000);
+                    snackbar.Show();
                 }
                 
             }
@@ -1146,8 +1295,6 @@ namespace CompEat_CuppyBreak_Initial
                 }
             }
 
-          
-
             void checktotal(TextView x, TextView y) {
                 TextView itemcounted = x;
                 TextView itemname = y;
@@ -1161,7 +1308,6 @@ namespace CompEat_CuppyBreak_Initial
                     String inittext = itemcounts.Text.ToString();
                     itemcounts.Text = inittext +"\n" + itemfinalcount.ToString() + " " + itemlist;
                 } 
-
 
             }
 
@@ -1207,20 +1353,70 @@ namespace CompEat_CuppyBreak_Initial
                 checktotal(itemcount38, itemname38);
 
                 String cartlist = itemcounts.Text.ToString() + "\n" + "TOTAL: ₱" + total.Text.ToString();
+                String noitems = " " + "\n" + "NO ITEMS IN CART";
 
+                if (itemcounts.Text.ToString().Equals("ALL ITEMS:") || itemcounts.Text.ToString().Equals("ITEMS:") || total.Text.ToString().Equals("0"))
+                {
+                    var dialog = new AlertDialog.Builder(this);
 
-                var dialog = new AlertDialog.Builder(this);
+                    AlertDialog alert = dialog.Create();
 
-                AlertDialog alert = dialog.Create();
+                    alert.SetTitle("Items in Cart:");
+                    alert.SetMessage(noitems);
+                    alert.Show();
 
-                alert.SetTitle("Items in Cart:");
-                alert.SetMessage(cartlist);
-                alert.Show();
+                    itemcounts.Text = "ALL ITEMS:";
+                } else
+                {
+                    var dialog = new AlertDialog.Builder(this);
 
-                itemcounts.Text = "ALL ITEMS:";
+                    AlertDialog alert = dialog.Create();
+
+                    alert.SetTitle("Items in Cart:");
+                    alert.SetMessage(cartlist);
+                    alert.Show();
+
+                    itemcounts.Text = "ALL ITEMS:";
+                }
+
+                
             }
 
+            void displaysub(ImageButton x, TextView y)
+            {
+                ImageButton subbtn = x;
+                TextView itemcount = y;
 
+                String itemcountstringed = y.Text.ToString();
+
+                int itemcountconverted = Convert.ToInt32(itemcountstringed);
+
+
+                if (itemcountconverted > 0)
+                {
+                    x.Visibility = ViewStates.Visible;
+                } else
+                {
+                    x.Visibility = ViewStates.Invisible;
+                }
+                
+            }
+
+            void removesub(ImageButton x, TextView y)
+            {
+                ImageButton subbtn = x;
+                TextView itemcount = y;
+
+                String itemcountstringed = y.Text.ToString();
+
+                int itemcountconverted = Convert.ToInt32(itemcountstringed);
+
+                if (itemcountconverted == 0 || itemcountconverted < 0)
+                {
+                    x.Visibility = ViewStates.Invisible;
+                } 
+
+            }
 
             //Computes the Total Change of Customer
             /*void compchange()
