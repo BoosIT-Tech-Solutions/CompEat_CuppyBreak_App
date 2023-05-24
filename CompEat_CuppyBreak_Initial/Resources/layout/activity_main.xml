@@ -105,6 +105,7 @@
                                 android:textSize="12dp"/>
 
                             <ImageButton
+                                android:visibility="invisible"
                                 android:textSize="25dp"
                                 android:textColor="@android:color/white"
                                 android:src="@drawable/minus"
@@ -180,6 +181,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -249,6 +251,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -336,6 +339,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -409,6 +413,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -508,6 +513,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -581,6 +587,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -654,6 +661,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -752,6 +760,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -825,6 +834,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -898,6 +908,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -985,6 +996,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -1058,6 +1070,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -1157,6 +1170,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -1230,6 +1244,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -1303,6 +1318,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -1402,6 +1418,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -1475,6 +1492,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -1547,6 +1565,7 @@
                                 android:textSize="12dp"/>
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -1638,6 +1657,7 @@
                                 android:textSize="12dp"/>
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -1711,6 +1731,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -1784,6 +1805,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -1871,6 +1893,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -1944,6 +1967,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -2017,6 +2041,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -2117,6 +2142,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -2190,6 +2216,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -2263,6 +2290,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -2350,6 +2378,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -2423,6 +2452,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -2492,6 +2522,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -2581,6 +2612,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -2654,6 +2686,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -2727,6 +2760,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -2814,6 +2848,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -2887,6 +2922,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -2960,6 +2996,7 @@
                         />
            
                             <ImageButton
+                                android:visibility="invisible"
                                 android:src="@drawable/minus"
                                 android:layout_width="45dp"
                                 android:layout_height="25dp"
@@ -3043,6 +3080,7 @@
                             />
            
                                 <ImageButton
+                                    android:visibility="invisible"
                                     android:src="@drawable/minus"
                                     android:layout_width="45dp"
                                     android:layout_height="25dp"
